@@ -33,3 +33,5 @@ include $(LOCAL_PATH)/vendor_prop.mk
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
+$(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
+$(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
